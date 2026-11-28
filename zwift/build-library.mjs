@@ -15,7 +15,7 @@ for await (const f of walk(dir)) {
     if (w.sport !== "bike" || !w.segments.length) continue;
     const m = metrics(w.segments);
     const key = `${w.name}|${m.dur}|${m.TSS}`; if (seen.has(key)) continue; seen.add(key);
-    lib.push({ id: relative(dir, f), name: w.name || basename(f, ".zwo"), collection: basename(dirname(f)), author: w.author, tags: w.tags, metrics: m });
+    lib.push({ id: relative(dir, f), name: w.name || basename(f, ".zwo"), collection: relative(dir, f).split(/[\\/]/)[0], author: w.author, tags: w.tags, metrics: m });
   } catch (e) { console.warn("Saltato", f, e.message); }
 }
 await writeFile(out, JSON.stringify(lib));

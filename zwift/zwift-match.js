@@ -62,18 +62,20 @@ export function metrics(segs) {
   let acc = 0, s4 = 0, cnt = 0; const q = [];
   for (const p of w) { q.push(p); acc += p; if (q.length > 30) acc -= q.shift(); if (q.length === 30) { s4 += (acc / 30) ** 4; cnt++; } }
   const IF = cnt ? (s4 / cnt) ** 0.25 : w.reduce((a, b) => a + b, 0) / n;
+  const free = segs.filter(s => s.kind === "free").reduce((a, s) => a + s.d, 0) / n;
   const zones = [0, 0, 0, 0, 0, 0]; for (const p of w) zones[zoneOf(p)]++;
   const above = THR.map(t => w.filter(p => p >= t).length / n);
   // "sforzi": tratti continui ≥ 88% FTP (sweet spot/soglia e oltre)
-  const bouts = []; let run = 0;
-  for (const p of w) { if (p >= 0.88) run++; else if (run) { bouts.push(run); run = 0; } }
-  if (run) bouts.push(run);
-  const work = bouts.filter(b => b >= 15);
+  const bouts = []; let run = 0, sum = 0;
+  for (const p of w) { if (p >= 0.88) { run++; sum += p; } else if (run) { bouts.push([run, sum]); run = 0; sum = 0; } }
+  if (run) bouts.push([run, sum]);
+  const wb = bouts.filter(b => b[0] >= 15), work = wb.map(b => b[0]);
+  const effPow = wb.length ? wb.reduce((a, b) => a + b[1], 0) / work.reduce((a, b) => a + b, 0) : 0;
   return {
     dur: n, IF: +IF.toFixed(3), TSS: Math.round(n / 3600 * IF * IF * 100),
     zones: zones.map(z => z / n), above,
     nEff: work.length, effMean: work.length ? Math.round(work.reduce((a, b) => a + b, 0) / work.length) : 0,
-    effMax: work.length ? Math.max(...work) : 0, pMax: Math.max(...w),
+    effMax: work.length ? Math.max(...work) : 0, effPow: +effPow.toFixed(3), free: +free.toFixed(2), pMax: Math.max(...w),
   };
 }
 
@@ -92,11 +94,13 @@ export function similarity(a, b, w = WEIGHTS) {
   const sAbove = 1 - Math.min(1, ad / THR.length * 4);
   // struttura degli sforzi: numero, durata media, durata massima
   const sEff = (a.nEff === 0 && b.nEff === 0) ? 1
-    : 1 - (0.3 * relErr(a.nEff, b.nEff) + 0.4 * relErr(a.effMean, b.effMean) + 0.3 * relErr(a.effMax, b.effMax));
+    : 1 - (0.2 * relErr(a.nEff, b.nEff) + 0.25 * relErr(a.effMean, b.effMean) + 0.15 * relErr(a.effMax, b.effMax)
+           + 0.4 * Math.min(1, Math.abs((a.effPow || 0) - (b.effPow || 0)) / 0.15));   // intensità degli sforzi: 15% FTP di scarto → 0
   const sDur = Math.max(0, 1 - relErr(a.dur, b.dur) * 2);       // -50% durata → 0
   const sTss = Math.max(0, 1 - relErr(a.TSS, b.TSS) * 2);
   const score = w.zones * sZones + w.above * sAbove + w.effort * sEff + w.dur * sDur + w.tss * sTss;
-  return { score: Math.round(100 * score), parts: { zones: sZones, above: sAbove, effort: sEff, dur: sDur, tss: sTss } };
+  const pFree = Math.abs((a.free || 0) - (b.free || 0)) * 0.3;      // tratti "liberi" = struttura ignota: penalità
+  return { score: Math.round(100 * Math.max(0, score - pFree)), parts: { zones: sZones, above: sAbove, effort: sEff, dur: sDur, tss: sTss } };
 }
 
 // library: [{ id, name, url?, metrics }] (precalcolata con build-library.mjs)
@@ -107,6 +111,7 @@ export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTo
     .map(x => ({ ...x, ...similarity(m, x.metrics) }))
     .filter(x => x.score >= minScore)
     .sort((a, b) => b.score - a.score)
+    .filter((x, i, arr) => arr.findIndex(y => y.name.replace(/^(Week|Month|Day)\s*[\d.]+\s*-\s*/i, "") === x.name.replace(/^(Week|Month|Day)\s*[\d.]+\s*-\s*/i, "")) === i)  // niente doppioni di nome
     .slice(0, top);
 }
 
