@@ -104,7 +104,8 @@ export function similarity(a, b, w = WEIGHTS) {
 }
 
 // library: [{ id, name, url?, metrics }] (precalcolata con build-library.mjs)
-export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTolerance = 0.35, sources = null } = {}) {
+export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTolerance = 0.35, sources = null, prefer = "zwift", preferMargin = 5 } = {}) {
+  // prefer/preferMargin: un workout della sorgente preferita (ufficiale Zwift) passa davanti se è entro preferMargin punti dal migliore
   // sources: es. ["zwift"] solo workout già presenti in Zwift; null = tutte ("seblambla" va importata)
   const m = metrics(sessionSegs);
   return library
@@ -112,7 +113,8 @@ export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTo
     .filter(x => relErr(x.metrics.dur, m.dur) <= durTolerance)   // pre-filtro durata
     .map(x => ({ ...x, ...similarity(m, x.metrics) }))
     .filter(x => x.score >= minScore)
-    .sort((a, b) => b.score - a.score)
+    .map(x => ({ ...x, rank: x.score + (x.source === prefer ? preferMargin : 0) }))
+    .sort((a, b) => b.rank - a.rank || (b.source === prefer) - (a.source === prefer) || b.score - a.score)   // a parità (scarto = margine) vince l'ufficiale
     .filter((x, i, arr) => arr.findIndex(y => y.name.replace(/^(Week|Month|Day)\s*[\d.]+\s*-\s*/i, "") === x.name.replace(/^(Week|Month|Day)\s*[\d.]+\s*-\s*/i, "")) === i)  // niente doppioni di nome
     .slice(0, top);
 }

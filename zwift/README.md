@@ -11,6 +11,7 @@ Fonte libreria: dump `zwift_workouts_all_collections_ordered_Mar21` (repo pubbli
 da JC-Concepts/WorkoutGenerator (Nov 2020). Limiti: fermo a marzo 2021 (workout più recenti assenti, alcuni nomi possono essere cambiati in Zwift).
 
 `bestMatches(seduta, lib, { sources: ["zwift"] })` limita ai workout già presenti in Zwift.
+Precedenza: un ufficiale Zwift passa davanti a un seblambla se è entro 5 punti (`prefer: "zwift", preferMargin: 5`); il punteggio mostrato resta quello reale.
 
 Punteggio: zone 30% · tempo-sopra-soglia 25% · sforzi 20% · durata 15% · TSS 10%, penalità per tratti FreeRide.
 Fallback: se il migliore è < 75 → `toZwo()` e import in `~/Documents/Zwift/Workouts/<ID_Zwift>/`.
