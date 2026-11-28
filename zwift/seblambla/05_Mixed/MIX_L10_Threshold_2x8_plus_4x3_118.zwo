@@ -1,0 +1,48 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L10 - Threshold 2x8 + 4x3 @ 118%</name>
+    <description>PICK THIS WHEN: The hardest mixed sessions. Peak race preparation only; fresh legs and full fuel.
+DAY TYPE: Medium to hard.
+
+Mixed - level 10 of 10. Threshold 2x8 + 4x3 @ 118%.
+
+Structure: 10 min warm-up, 8 min @ 100%, 4 min @ 55%, 8 min @ 100%, 3 min @ 55%, 4 x (3 min @ 118% / 2:30 min @ 50%), 5 min cool-down.
+
+Coach notes: Threshold then a full VO2max set. The hardest mixed session - only when fresh and fuelled.
+
+Estimated TSS: 71.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 10"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="480" Power="1.00">
+            <textevent timeoffset="0" message="8 min at 100% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="480" Power="1.00">
+            <textevent timeoffset="0" message="8 min at 100% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="180" OffDuration="150" OnPower="1.18" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 3 min at 118%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="180" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

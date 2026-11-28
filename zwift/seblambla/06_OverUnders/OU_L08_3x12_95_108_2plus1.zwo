@@ -1,0 +1,49 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Over-Unders L08 - 3x12 (95/108) 2+1</name>
+    <description>PICK THIS WHEN: Advanced over-unders: bigger over phases. Pick when L05 has been completed without power fading. Long unders: closer to a hard climb with attacks.
+DAY TYPE: HARD.
+
+Over-Unders - level 8 of 10. 3x12 (95/108) 2+1.
+
+Structure: 10 min warm-up, 4 x (2 min @ 95% / 1 min @ 108%), 3 min @ 55%, 4 x (2 min @ 95% / 1 min @ 108%), 3 min @ 55%, 4 x (2 min @ 95% / 1 min @ 108%), 3 min @ 60%, 5 min cool-down.
+
+Coach notes: 36 minutes, under at 95%, over at 108%. Fuel before and during. The over creates lactate, the under trains your body to clear it while still working - never coast after an over.
+
+Estimated TSS: 73.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Over-Under"/>
+        <tag name="Level 8"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Over-under session. Warm up properly - the first block starts at the top of sweet spot."/>
+            <textevent timeoffset="480" message="2 minutes to the first block. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="60" OnPower="0.95" OffPower="1.08">
+            <textevent timeoffset="0" message="UNDER: 2 min at 95%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="120" message="OVER: 1 min at 108%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="60" OnPower="0.95" OffPower="1.08">
+            <textevent timeoffset="0" message="UNDER: 2 min at 95%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="120" message="OVER: 1 min at 108%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="60" OnPower="0.95" OffPower="1.08">
+            <textevent timeoffset="0" message="UNDER: 2 min at 95%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="120" message="OVER: 1 min at 108%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 3 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

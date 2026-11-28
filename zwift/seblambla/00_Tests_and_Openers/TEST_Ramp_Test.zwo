@@ -1,0 +1,93 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Ramp Test</name>
+    <description>PICK THIS WHEN: Same purpose as the 20-min test but shorter; use the same test type each time so results are comparable.
+DAY TYPE: Special.
+
+Tests &amp; Openers. Ramp Test.
+
+Structure: 5 min warm-up, 1 min @ 52%, 1 min @ 58%, 1 min @ 64%, 1 min @ 70%, 1 min @ 76%, 1 min @ 82%, 1 min @ 88%, 1 min @ 94%, 1 min @ 100%, 1 min @ 106%, 1 min @ 112%, 1 min @ 118%, 1 min @ 124%, 1 min @ 130%, 1 min @ 136%, 1 min @ 142%, 1 min @ 148%, 1 min @ 154%, 1 min @ 160%, 1 min @ 166%, 1 min @ 172%, 1 min @ 178%, 10 min cool-down.
+
+Coach notes: Ramp test (TrainerRoad-style protocol): 1-minute steps starting at 46% FTP, +6% per step. Ride until failure, then your new FTP is 75% of the best 1-minute power. Shorter and less painful than the 20-min test, slightly less accurate for riders with a strong sprint.
+
+Duration: 37 min. Estimated TSS: 58 (tests depend on your effort).</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Test"/>
+    </tags>
+    <workout>
+        <Warmup Duration="300" PowerLow="0.40" PowerHigh="0.46">
+            <textevent timeoffset="0" message="Ramp test. 1-minute steps, +6% each. Ride until you cannot hold the step - do not pace."/>
+            <textevent timeoffset="180" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="60" Power="0.52">
+            <textevent timeoffset="0" message="Step 1: 52%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.58">
+            <textevent timeoffset="0" message="Step 2: 58%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.64">
+            <textevent timeoffset="0" message="Step 3: 64%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.70">
+            <textevent timeoffset="0" message="Step 4: 70%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.76">
+            <textevent timeoffset="0" message="Step 5: 76%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.82">
+            <textevent timeoffset="0" message="Step 6: 82%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.88">
+            <textevent timeoffset="0" message="Step 7: 88%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="0.94">
+            <textevent timeoffset="0" message="Step 8: 94%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.00">
+            <textevent timeoffset="0" message="Step 9: 100%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.06">
+            <textevent timeoffset="0" message="Step 10: 106%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.12">
+            <textevent timeoffset="0" message="Step 11: 112%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.18">
+            <textevent timeoffset="0" message="Step 12: 118%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.24">
+            <textevent timeoffset="0" message="Step 13: 124%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.30">
+            <textevent timeoffset="0" message="Step 14: 130%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.36">
+            <textevent timeoffset="0" message="Step 15: 136%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.42">
+            <textevent timeoffset="0" message="Step 16: 142%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.48">
+            <textevent timeoffset="0" message="Step 17: 148%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.54">
+            <textevent timeoffset="0" message="Step 18: 154%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.60">
+            <textevent timeoffset="0" message="Step 19: 160%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.66">
+            <textevent timeoffset="0" message="Step 20: 166%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.72">
+            <textevent timeoffset="0" message="Step 21: 172%."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.78">
+            <textevent timeoffset="0" message="Step 22: 178%."/>
+        </SteadyState>
+        <Cooldown Duration="600" PowerLow="0.50" PowerHigh="0.35">
+            <textevent timeoffset="0" message="Stop as soon as you cannot hold a step, then spin easy. New FTP = 75% of your best 1-minute power from this ride."/>
+        </Cooldown>
+    </workout>
+</workout_file>

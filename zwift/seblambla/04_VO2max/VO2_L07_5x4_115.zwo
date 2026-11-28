@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>VO2max L07 - 5x4 @ 115%</name>
+    <description>PICK THIS WHEN: Advanced VO2max: for when you complete L06 with power holding on the last interval. Classic long intervals: the most reliable VO2max stimulus.
+DAY TYPE: HARD.
+
+VO2max - level 7 of 10. 5x4 @ 115%.
+
+Structure: 12 min warm-up, 5 x (4 min @ 115% / 4 min @ 50%), 8 min cool-down.
+
+Coach notes: The classic VO2max session. If you fail the 4th, lower the bias by 3% rather than skipping the 5th.
+
+Estimated TSS: 63.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="VO2max"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="720" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="VO2max session. Warm up thoroughly and add two 15 s accelerations in the last 3 minutes."/>
+            <textevent timeoffset="600" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="5" OnDuration="240" OffDuration="240" OnPower="1.15" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 4 min at 115%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="180" message="Last minute - hold the number."/>
+            <textevent timeoffset="240" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="480" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

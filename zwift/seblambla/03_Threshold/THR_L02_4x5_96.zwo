@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L02 - 4x5 @ 96%</name>
+    <description>PICK THIS WHEN: Introduction to threshold work, or a lighter threshold week. Manageable even when not fully fresh. Shorter intervals at higher power: pick when you want quality over duration.
+DAY TYPE: HARD.
+
+Threshold - level 2 of 10. 4x5 @ 96%.
+
+Structure: 10 min warm-up, 4 x (5 min @ 96% / 3 min @ 55%), 13 min @ 65%, 5 min cool-down.
+
+Coach notes: Short repeated threshold efforts. Hit the number from the first minute.
+
+Estimated TSS: 55.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 2"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="300" OffDuration="180" OnPower="0.96" OffPower="0.55">
+            <textevent timeoffset="0" message="5 min at 96%. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Last minute - hold the number."/>
+            <textevent timeoffset="300" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="780" Power="0.65">
+            <textevent timeoffset="0" message="Main set done. 13 min of steady Zone 2 at 65% to finish - relaxed but not soft."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

@@ -1,0 +1,41 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot L09 - 2x20 @ 92%</name>
+    <description>PICK THIS WHEN: Top of the sweet spot ladder: the most work that fits the format. After this, move to the 90-minute set or to threshold. Long blocks: closest to a steady climb or time-trial feel.
+DAY TYPE: Medium.
+
+Sweet Spot - level 9 of 10. 2x20 @ 92%.
+
+Structure: 10 min warm-up, 20 min @ 92%, 5 min @ 55%, 20 min @ 92%, 5 min cool-down.
+
+Coach notes: The classic 2x20 at upper sweet spot. Patience and pacing.
+
+Estimated TSS: 67.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="1200" Power="0.92">
+            <textevent timeoffset="0" message="20 min at 92% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="600" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="1140" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="1200" Power="0.92">
+            <textevent timeoffset="0" message="20 min at 92% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="600" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="1140" message="Last minute - stay composed."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

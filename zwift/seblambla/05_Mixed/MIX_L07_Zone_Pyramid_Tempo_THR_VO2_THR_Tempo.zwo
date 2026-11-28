@@ -1,0 +1,58 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L07 - Zone Pyramid Tempo-THR-VO2-THR-Tempo</name>
+    <description>PICK THIS WHEN: Hard day touching every zone. A good test of all-round fitness.
+DAY TYPE: Medium to hard.
+
+Mixed - level 7 of 10. Zone Pyramid Tempo-THR-VO2-THR-Tempo.
+
+Structure: 10 min warm-up, 7 min @ 85%, 4 min @ 60%, 7 min @ 100%, 4 min @ 55%, 4 min @ 115%, 4 min @ 55%, 7 min @ 100%, 3 min @ 60%, 5 min @ 85%, 5 min cool-down.
+
+Coach notes: Tempo, threshold, VO2max and back down. Notice how each zone feels different.
+
+Estimated TSS: 63.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="420" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 7 min at 85%. Controlled, rhythmic, not hard."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.60">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="420" Power="1.00">
+            <textevent timeoffset="0" message="7 min at 100% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="360" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="1.15">
+            <textevent timeoffset="0" message="GO! 4 min at 115%."/>
+            <textevent timeoffset="180" message="Last minute. Hold on."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="420" Power="1.00">
+            <textevent timeoffset="0" message="7 min at 100% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="360" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.60">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 5 min at 85%. Controlled, rhythmic, not hard."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

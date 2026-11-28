@@ -1,0 +1,82 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>VO2max L09 - Hard-Start 6x4 (140 then 110)</name>
+    <description>PICK THIS WHEN: Peak VO2max sessions. Reserve for the last 3-4 weeks before a goal, with an easy day either side. Varied-power intervals: a different stimulus when classic 4-minute efforts have become routine.
+DAY TYPE: HARD.
+
+VO2max - level 9 of 10. Hard-Start 6x4 (140 then 110).
+
+Structure: 10 min warm-up, 30 s @ 140%, 3:30 min @ 110%, 3 min @ 50%, 30 s @ 140%, 3:30 min @ 110%, 3 min @ 50%, 30 s @ 140%, 3:30 min @ 110%, 3 min @ 50%, 30 s @ 140%, 3:30 min @ 110%, 3 min @ 50%, 30 s @ 140%, 3:30 min @ 110%, 3 min @ 50%, 30 s @ 140%, 3:30 min @ 110%, 5 min @ 60%, 6 min cool-down.
+
+Coach notes: 30 s at 140% then 3:30 at 110%. The hard start drives oxygen uptake up fast; the 110% part feels much harder than usual.
+
+Estimated TSS: 70.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="VO2max"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="VO2max session. Warm up thoroughly and add two 15 s accelerations in the last 3 minutes."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.40">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 140%!"/>
+        </SteadyState>
+        <SteadyState Duration="210" Power="1.10">
+            <textevent timeoffset="0" message="GO! 3:30 at 110%."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 5 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="360" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

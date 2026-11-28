@@ -1,0 +1,34 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L09 - 3x12 @ 100%</name>
+    <description>PICK THIS WHEN: Peak threshold sessions: the classic 2x20 and beyond. Only when fresh; one per week, and follow it with an easy day.
+DAY TYPE: HARD.
+
+Threshold - level 9 of 10. 3x12 @ 100%.
+
+Structure: 10 min warm-up, 3 x (12 min @ 100% / 3 min @ 55%), 5 min cool-down.
+
+Coach notes: 36 minutes at FTP. A benchmark session - fuel before and during.
+
+Estimated TSS: 74.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="720" OffDuration="180" OnPower="1.00" OffPower="0.55">
+            <textevent timeoffset="0" message="12 min at 100%. Pace it like a time trial."/>
+            <textevent timeoffset="360" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="660" message="Last minute - hold the number."/>
+            <textevent timeoffset="720" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

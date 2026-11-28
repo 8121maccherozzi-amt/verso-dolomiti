@@ -1,0 +1,55 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L09 - Kitchen Sink</name>
+    <description>PICK THIS WHEN: Very hard session: everything in one ride. Not more than once a week.
+DAY TYPE: Medium to hard.
+
+Mixed - level 9 of 10. Kitchen Sink.
+
+Structure: 10 min warm-up, 10 min @ 92%, 3 min @ 55%, 8 min @ 102%, 3 min @ 55%, 4 x (2 min @ 118% / 2 min @ 50%), 30 s @ 55%, 3 x (15 s @ 160% / 1:15 min @ 55%), 5 min cool-down.
+
+Coach notes: Sweet spot, threshold, VO2max and sprints in one hour. Intensity rises as duration falls.
+
+Estimated TSS: 67.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.92">
+            <textevent timeoffset="0" message="10 min at 92% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="480" Power="1.02">
+            <textevent timeoffset="0" message="8 min at 102% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="120" OnPower="1.18" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 2 min at 118%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="120" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="30" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 30 s easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="15" OffDuration="75" OnPower="1.60" OffPower="0.55">
+            <textevent timeoffset="0" message="GO! 15 s at 160%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="15" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

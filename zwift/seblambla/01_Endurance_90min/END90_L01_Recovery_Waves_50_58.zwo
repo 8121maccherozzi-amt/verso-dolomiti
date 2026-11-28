@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L01 - Recovery Waves 50-58%</name>
+    <description>PICK THIS WHEN: Recovery day: the day after a hard session, or when tired. Should feel almost too easy. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt. Variable pacing keeps a long ride interesting.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 1 of 10. Recovery Waves 50-58%.
+
+Structure: 10 min warm-up, 7 x (5 min @ 58% / 5 min @ 50%), 10 min cool-down.
+
+Coach notes: Gentle waves to keep a long recovery ride interesting. Nothing above low Zone 2. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 42.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 1"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.40" PowerHigh="0.52">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <IntervalsT Repeat="7" OnDuration="300" OffDuration="300" OnPower="0.58" OffPower="0.50">
+            <textevent timeoffset="0" message="Wave up: 5 min at 58%."/>
+            <textevent timeoffset="300" message="Wave down: 50%. Keep pedalling smoothly."/>
+        </IntervalsT>
+        <Cooldown Duration="600" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

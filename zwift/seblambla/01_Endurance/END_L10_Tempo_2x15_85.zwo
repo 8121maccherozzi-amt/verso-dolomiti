@@ -1,0 +1,42 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L10 - Tempo 2x15 @ 85%</name>
+    <description>PICK THIS WHEN: Tempo-flavoured endurance: counts as a MEDIUM day, not an easy one. Do not place it the day before a hard session.
+DAY TYPE: Easy.
+
+Endurance - level 10 of 10. Tempo 2x15 @ 85%.
+
+Structure: 10 min warm-up, 10 min @ 65%, 15 min @ 85%, 5 min @ 65%, 15 min @ 85%, 5 min cool-down.
+
+Coach notes: Two 15-minute tempo blocks. The hardest endurance session in the library.
+
+Estimated TSS: 54.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 10"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.65">
+            <textevent timeoffset="0" message="10 min at 65% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="900" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 15 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="450" message="Halfway through this tempo block."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="5 min at 65% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="900" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 15 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="450" message="Halfway through this tempo block."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

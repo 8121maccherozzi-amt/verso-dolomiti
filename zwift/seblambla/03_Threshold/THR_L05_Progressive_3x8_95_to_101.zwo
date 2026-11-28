@@ -1,0 +1,52 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L05 - Progressive 3x8 (95 to 101%)</name>
+    <description>PICK THIS WHEN: Your hard session of the week in a build phase. Needs fresh legs and a proper meal beforehand. Progressive blocks: a good choice when you are unsure of your current FTP.
+DAY TYPE: HARD.
+
+Threshold - level 5 of 10. Progressive 3x8 (95 to 101%).
+
+Structure: 10 min warm-up, 8 min @ 95%, 4 min @ 55%, 8 min @ 98%, 4 min @ 55%, 8 min @ 101%, 13 min @ 65%, 5 min cool-down.
+
+Coach notes: Three 8-minute blocks, each one a notch harder: 95, 98 then 101%. Start conservative - the last block is the point of the session.
+
+Estimated TSS: 61.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 5"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="480" Power="0.95">
+            <textevent timeoffset="0" message="8 min at 95% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth, relax the hands and shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="480" Power="0.98">
+            <textevent timeoffset="0" message="8 min at 98% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth, relax the hands and shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="480" Power="1.01">
+            <textevent timeoffset="0" message="8 min at 101% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth, relax the hands and shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="780" Power="0.65">
+            <textevent timeoffset="0" message="13 min steady Zone 2 at 65% to round off the ride. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

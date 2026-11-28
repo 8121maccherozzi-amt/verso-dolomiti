@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L03 - Z2 Waves 58-66%</name>
+    <description>PICK THIS WHEN: Standard easy day. The bulk of your endurance riding should be here. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt. Variable pacing keeps a long ride interesting.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 3 of 10. Z2 Waves 58-66%.
+
+Structure: 10 min warm-up, 8 x (4:30 min @ 66% / 4:30 min @ 58%), 3 min @ 62%, 5 min cool-down.
+
+Coach notes: Rolling Zone 2 for 72 minutes: shift gears to change power, keep pedalling smoothly. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 55.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 3"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <IntervalsT Repeat="8" OnDuration="270" OffDuration="270" OnPower="0.66" OffPower="0.58">
+            <textevent timeoffset="0" message="Wave up: 4:30 at 66%."/>
+            <textevent timeoffset="270" message="Wave down: 58%. Keep pedalling smoothly."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.62">
+            <textevent timeoffset="0" message="Main set done. 3 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

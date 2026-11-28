@@ -1,0 +1,79 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L10 - Hard Race Simulation</name>
+    <description>PICK THIS WHEN: The hardest mixed sessions. Peak race preparation only; fresh legs and full fuel.
+DAY TYPE: Medium to hard.
+
+Mixed - level 10 of 10. Hard Race Simulation.
+
+Structure: 10 min warm-up, 4 min @ 75%, 1 min @ 145%, 3 min @ 105%, 5 min @ 90%, 1:30 min @ 130%, 8 min @ 100%, 5 min @ 65%, 30 s @ 155%, 3 min @ 102%, 3 min @ 65%, 30 s @ 150%, 2 min @ 98%, 2 min @ 65%, 1 min @ 125%, 20 s @ 160%, 5:10 min @ 50%, 5 min cool-down.
+
+Coach notes: A race that never lets up: longer break, harder attacks, two sprints. Treat every cue like it decides the race.
+
+Estimated TSS: 71.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 10"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="240" Power="0.75">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.45">
+            <textevent timeoffset="0" message="ATTACK! 1 min at 145%!"/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="1.05">
+            <textevent timeoffset="0" message="3 min at 105% - threshold. Pace it like a time trial."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.90">
+            <textevent timeoffset="0" message="5 min at 90% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="240" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="90" Power="1.30">
+            <textevent timeoffset="0" message="ATTACK! 1:30 at 130%!"/>
+        </SteadyState>
+        <SteadyState Duration="480" Power="1.00">
+            <textevent timeoffset="0" message="8 min at 100% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.55">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 155%!"/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="1.02">
+            <textevent timeoffset="0" message="3 min at 102% - threshold. Pace it like a time trial."/>
+        </SteadyState>
+        <SteadyState Duration="180" Power="0.65">
+            <textevent timeoffset="0" message="Recover: 3 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="30" Power="1.50">
+            <textevent timeoffset="0" message="ATTACK! 30 s at 150%!"/>
+        </SteadyState>
+        <SteadyState Duration="120" Power="0.98">
+            <textevent timeoffset="0" message="2 min at 98% - threshold. Pace it like a time trial."/>
+        </SteadyState>
+        <SteadyState Duration="120" Power="0.65">
+            <textevent timeoffset="0" message="Recover: 2 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="60" Power="1.25">
+            <textevent timeoffset="0" message="ATTACK! 1 min at 125%!"/>
+        </SteadyState>
+        <SteadyState Duration="20" Power="1.60">
+            <textevent timeoffset="0" message="ATTACK! 20 s at 160%!"/>
+        </SteadyState>
+        <SteadyState Duration="310" Power="0.50">
+            <textevent timeoffset="0" message="Recover: 5:10 easy. Drink."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

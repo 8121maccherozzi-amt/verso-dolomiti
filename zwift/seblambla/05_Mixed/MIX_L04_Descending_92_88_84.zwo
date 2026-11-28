@@ -1,0 +1,51 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L04 - Descending 92 / 88 / 84%</name>
+    <description>PICK THIS WHEN: Medium day combining zones. A good 'something of everything' session.
+DAY TYPE: Medium to hard.
+
+Mixed - level 4 of 10. Descending 92 / 88 / 84%.
+
+Structure: 10 min warm-up, 10 min @ 92%, 4 min @ 55%, 10 min @ 88%, 4 min @ 55%, 10 min @ 84%, 7 min @ 60%, 5 min cool-down.
+
+Coach notes: Three 10-minute blocks of descending intensity. Each feels similar as fatigue builds.
+
+Estimated TSS: 55.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 4"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.92">
+            <textevent timeoffset="0" message="10 min at 92% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="600" Power="0.88">
+            <textevent timeoffset="0" message="10 min at 88% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="600" Power="0.84">
+            <textevent timeoffset="0" message="Tempo: 10 min at 84%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="300" message="Halfway through this tempo block."/>
+        </SteadyState>
+        <SteadyState Duration="420" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 7 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

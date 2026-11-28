@@ -1,0 +1,31 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Recovery Spin 30 min</name>
+    <description>PICK THIS WHEN: The day after a race or a very hard session, or when the legs are flat.
+DAY TYPE: Special.
+
+Tests &amp; Openers. Recovery Spin 30 min.
+
+Structure: 5 min warm-up, 20 min @ 50%, 5 min cool-down.
+
+Coach notes: Thirty very easy minutes to flush the legs the day after a hard session or a race. If in doubt, take the day off instead.
+
+Duration: 30 min. Estimated TSS: 12 (tests depend on your effort).</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Test"/>
+    </tags>
+    <workout>
+        <Warmup Duration="300" PowerLow="0.40" PowerHigh="0.50">
+            <textevent timeoffset="0" message="Recovery spin. The goal is to feel better at the end than at the start."/>
+            <textevent timeoffset="180" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="1200" Power="0.50">
+            <textevent timeoffset="0" message="20 min at 50%. Light gear, no pressure on the pedals."/>
+            <textevent timeoffset="600" message="Halfway. If 50% feels like work today, lower the bias."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.50" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

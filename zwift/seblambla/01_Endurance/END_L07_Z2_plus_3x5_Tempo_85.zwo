@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L07 - Z2 + 3x5 Tempo @ 85%</name>
+    <description>PICK THIS WHEN: Endurance day when fresh. Upper Zone 2 - still conversational but purposeful.
+DAY TYPE: Easy.
+
+Endurance - level 7 of 10. Z2 + 3x5 Tempo @ 85%.
+
+Structure: 10 min warm-up, 9 min @ 66%, 3 x (5 min @ 85% / 7 min @ 65%), 5 min cool-down.
+
+Coach notes: Zone 2 base with three tempo touches. Same rhythm, just add pressure.
+
+Estimated TSS: 46.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="540" Power="0.66">
+            <textevent timeoffset="0" message="9 min at 66% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="300" OffDuration="420" OnPower="0.85" OffPower="0.65">
+            <textevent timeoffset="0" message="Tempo: 5 min at 85%. Controlled, rhythmic."/>
+            <textevent timeoffset="240" message="Last minute - hold the number."/>
+            <textevent timeoffset="300" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

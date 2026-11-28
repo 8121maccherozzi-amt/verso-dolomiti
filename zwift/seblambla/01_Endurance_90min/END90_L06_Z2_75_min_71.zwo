@@ -1,0 +1,37 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L06 - Z2 75 min @ 71%</name>
+    <description>PICK THIS WHEN: Standard easy day. The bulk of your endurance riding should be here. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 6 of 10. Z2 75 min @ 71%.
+
+Structure: 10 min warm-up, 75 min @ 71%, 5 min cool-down.
+
+Coach notes: Upper-mid Zone 2 for 75 minutes. Concentration needed to avoid drifting into tempo. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 70.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 6"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <SteadyState Duration="4500" Power="0.71">
+            <textevent timeoffset="0" message="75 min at 71% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="900" message="15 min into this block. Drink, and eat something every 30-40 minutes."/>
+            <textevent timeoffset="1800" message="30 min in. Check your position: relaxed shoulders, light grip, no surging."/>
+            <textevent timeoffset="2700" message="45 min into this block. Drink, and eat something every 30-40 minutes."/>
+            <textevent timeoffset="3600" message="60 min in. Check your position: relaxed shoulders, light grip, no surging."/>
+            <textevent timeoffset="4200" message="Last 5 minutes of this block. Keep the pressure even."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

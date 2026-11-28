@@ -1,0 +1,47 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L02 - Easy Z2 3x22 @ 60%</name>
+    <description>PICK THIS WHEN: Recovery day: the day after a hard session, or when tired. Should feel almost too easy. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 2 of 10. Easy Z2 3x22 @ 60%.
+
+Structure: 10 min warm-up, 22 min @ 60%, 4:30 min @ 50%, 22 min @ 60%, 4:30 min @ 50%, 22 min @ 60%, 5 min cool-down.
+
+Coach notes: Three easy blocks with short breaks. Good the day after a hard session or race. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 49.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 2"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.40" PowerHigh="0.55">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <SteadyState Duration="1320" Power="0.60">
+            <textevent timeoffset="0" message="22 min at 60% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="900" message="15 min into this block. Drink, and eat something every 30-40 minutes."/>
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.50">
+            <textevent timeoffset="0" message="4:30 at 50% - easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="1320" Power="0.60">
+            <textevent timeoffset="0" message="22 min at 60% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="900" message="15 min into this block. Drink, and eat something every 30-40 minutes."/>
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.50">
+            <textevent timeoffset="0" message="4:30 at 50% - easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="1320" Power="0.60">
+            <textevent timeoffset="0" message="22 min at 60% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="900" message="15 min into this block. Drink, and eat something every 30-40 minutes."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

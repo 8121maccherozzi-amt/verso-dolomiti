@@ -1,0 +1,51 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L04 - Sweet Spot 2x10 + 3x1 @ 120%</name>
+    <description>PICK THIS WHEN: Medium day combining zones. A good 'something of everything' session.
+DAY TYPE: Medium to hard.
+
+Mixed - level 4 of 10. Sweet Spot 2x10 + 3x1 @ 120%.
+
+Structure: 10 min warm-up, 10 min @ 90%, 4 min @ 55%, 10 min @ 90%, 4 min @ 55%, 3 x (1 min @ 120% / 2 min @ 50%), 8 min @ 60%, 5 min cool-down.
+
+Coach notes: Sweet spot base then three short VO2 efforts on pre-fatigued legs.
+
+Estimated TSS: 54.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 4"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.90">
+            <textevent timeoffset="0" message="10 min at 90% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="600" Power="0.90">
+            <textevent timeoffset="0" message="10 min at 90% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="120" OnPower="1.20" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 1 min at 120%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="60" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="480" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 8 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

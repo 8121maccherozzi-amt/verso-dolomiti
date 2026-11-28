@@ -1,0 +1,52 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L08 - Crit Simulation 3x8 (95% + 15s surges)</name>
+    <description>PICK THIS WHEN: Hard, race-specific session. Use in the 4-6 weeks before an event.
+DAY TYPE: Medium to hard.
+
+Mixed - level 8 of 10. Crit Simulation 3x8 (95% + 15s surges).
+
+Structure: 10 min warm-up, 5 min @ 60%, 4 x (1:45 min @ 95% / 15 s @ 150%), 4 min @ 55%, 4 x (1:45 min @ 95% / 15 s @ 150%), 4 min @ 55%, 4 x (1:45 min @ 95% / 15 s @ 150%), 8 min @ 65%, 5 min cool-down.
+
+Coach notes: Three 8-minute criterium blocks: threshold riding with a 15-second surge every 2 minutes. Trains repeated accelerations on top of a hard base.
+
+Estimated TSS: 64.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 8"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="300" Power="0.60">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="105" OffDuration="15" OnPower="0.95" OffPower="1.50">
+            <textevent timeoffset="0" message="Hold 95% - racing in the bunch."/>
+            <textevent timeoffset="105" message="SURGE! 15 s at 150% out of the corner."/>
+        </IntervalsT>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="105" OffDuration="15" OnPower="0.95" OffPower="1.50">
+            <textevent timeoffset="0" message="Hold 95% - racing in the bunch."/>
+            <textevent timeoffset="105" message="SURGE! 15 s at 150% out of the corner."/>
+        </IntervalsT>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="105" OffDuration="15" OnPower="0.95" OffPower="1.50">
+            <textevent timeoffset="0" message="Hold 95% - racing in the bunch."/>
+            <textevent timeoffset="105" message="SURGE! 15 s at 150% out of the corner."/>
+        </IntervalsT>
+        <SteadyState Duration="480" Power="0.65">
+            <textevent timeoffset="0" message="8 min steady Zone 2 at 65% to round off the ride. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

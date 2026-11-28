@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot L01 - 4x5 @ 88%</name>
+    <description>PICK THIS WHEN: First weeks of a base phase, after a break, or as a lighter sweet spot week. Shorter blocks: easier to pace, good first choice at a new level.
+DAY TYPE: Medium.
+
+Sweet Spot - level 1 of 10. 4x5 @ 88%.
+
+Structure: 10 min warm-up, 4 x (5 min @ 88% / 3 min @ 55%), 13 min @ 65%, 5 min cool-down.
+
+Coach notes: Short blocks to learn the sweet spot feeling: comfortably hard, sustainable.
+
+Estimated TSS: 49.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="300" OffDuration="180" OnPower="0.88" OffPower="0.55">
+            <textevent timeoffset="0" message="5 min at 88% - comfortably hard."/>
+            <textevent timeoffset="240" message="Last minute - hold the number."/>
+            <textevent timeoffset="300" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="780" Power="0.65">
+            <textevent timeoffset="0" message="Main set done. 13 min of steady Zone 2 at 65% to finish - relaxed but not soft."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

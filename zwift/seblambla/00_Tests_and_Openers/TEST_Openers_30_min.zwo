@@ -1,0 +1,38 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Openers 30 min</name>
+    <description>PICK THIS WHEN: The day before a race or hard group ride.
+DAY TYPE: Special.
+
+Tests &amp; Openers. Openers 30 min.
+
+Structure: 8 min warm-up, 3 x (1 min @ 110% / 2 min @ 60%), 2 x (20 s @ 150% / 2:40 min @ 60%), 3 min @ 65%, 4 min cool-down.
+
+Coach notes: Pre-race activation: three 1-minute efforts and two short sprints. Leaves the legs sharp without adding fatigue. Do it the day before (or the morning of) an event.
+
+Duration: 30 min. Estimated TSS: 24 (tests depend on your effort).</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Test"/>
+    </tags>
+    <workout>
+        <Warmup Duration="480" PowerLow="0.45" PowerHigh="0.70">
+            <textevent timeoffset="0" message="Openers - the day before an event. Short, sharp, no fatigue."/>
+            <textevent timeoffset="360" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="120" OnPower="1.10" OffPower="0.60">
+            <textevent timeoffset="0" message="1 min at 110% - open the legs."/>
+            <textevent timeoffset="60" message="Easy."/>
+        </IntervalsT>
+        <IntervalsT Repeat="2" OnDuration="20" OffDuration="160" OnPower="1.50" OffPower="0.60">
+            <textevent timeoffset="0" message="20 s hard - 150%!"/>
+            <textevent timeoffset="20" message="Easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.65">
+            <textevent timeoffset="0" message="3 min steady Zone 2 at 65%. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="240" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

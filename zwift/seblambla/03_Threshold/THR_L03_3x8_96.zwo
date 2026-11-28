@@ -1,0 +1,37 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L03 - 3x8 @ 96%</name>
+    <description>PICK THIS WHEN: Introduction to threshold work, or a lighter threshold week. Manageable even when not fully fresh.
+DAY TYPE: HARD.
+
+Threshold - level 3 of 10. 3x8 @ 96%.
+
+Structure: 10 min warm-up, 3 x (8 min @ 96% / 4 min @ 55%), 9 min @ 60%, 5 min cool-down.
+
+Coach notes: Three 8-minute blocks with 4-minute recoveries.
+
+Estimated TSS: 57.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 3"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="480" OffDuration="240" OnPower="0.96" OffPower="0.55">
+            <textevent timeoffset="0" message="8 min at 96%. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+            <textevent timeoffset="480" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="540" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 9 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

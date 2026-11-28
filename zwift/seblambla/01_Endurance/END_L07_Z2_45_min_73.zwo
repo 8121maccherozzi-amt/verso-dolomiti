@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L07 - Z2 45 min @ 73%</name>
+    <description>PICK THIS WHEN: Endurance day when fresh. Upper Zone 2 - still conversational but purposeful.
+DAY TYPE: Easy.
+
+Endurance - level 7 of 10. Z2 45 min @ 73%.
+
+Structure: 10 min warm-up, 45 min @ 73%, 5 min cool-down.
+
+Coach notes: Near the top of Zone 2 for 45 minutes. Breathing deeper but controlled.
+
+Estimated TSS: 47.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="2700" Power="0.73">
+            <textevent timeoffset="0" message="45 min at 73% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="1350" message="Halfway. Check your position: relaxed shoulders, light grip."/>
+            <textevent timeoffset="2400" message="Last 5 minutes. Keep the pressure even."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

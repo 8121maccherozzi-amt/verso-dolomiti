@@ -1,0 +1,43 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L06 - Z2 3x12 @ 74%</name>
+    <description>PICK THIS WHEN: Standard easy day. The bulk of your endurance riding should be here.
+DAY TYPE: Easy.
+
+Endurance - level 6 of 10. Z2 3x12 @ 74%.
+
+Structure: 10 min warm-up, 12 min @ 74%, 4:30 min @ 60%, 12 min @ 74%, 4:30 min @ 60%, 12 min @ 74%, 5 min cool-down.
+
+Coach notes: Three blocks near the top of Zone 2 with short easy breaks.
+
+Estimated TSS: 45.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 6"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="720" Power="0.74">
+            <textevent timeoffset="0" message="12 min at 74% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.60">
+            <textevent timeoffset="0" message="4:30 at 60% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="720" Power="0.74">
+            <textevent timeoffset="0" message="12 min at 74% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.60">
+            <textevent timeoffset="0" message="4:30 at 60% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="720" Power="0.74">
+            <textevent timeoffset="0" message="12 min at 74% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

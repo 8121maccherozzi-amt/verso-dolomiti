@@ -1,0 +1,32 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L10 - Low Tempo 45 min @ 78%</name>
+    <description>PICK THIS WHEN: Tempo-flavoured endurance: counts as a MEDIUM day, not an easy one. Do not place it the day before a hard session.
+DAY TYPE: Easy.
+
+Endurance - level 10 of 10. Low Tempo 45 min @ 78%.
+
+Structure: 10 min warm-up, 45 min @ 78%, 5 min cool-down.
+
+Coach notes: A full 45 minutes of low tempo. Bridge between endurance and sweet spot.
+
+Estimated TSS: 52.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 10"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="2700" Power="0.78">
+            <textevent timeoffset="0" message="Tempo: 45 min at 78%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="1350" message="Halfway through this tempo block."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

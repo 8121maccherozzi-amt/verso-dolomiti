@@ -1,0 +1,38 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L02 - Z2 + 4x2 @ 105%</name>
+    <description>PICK THIS WHEN: An easy-to-medium day with some intensity touches. Good when you want variety without fatigue.
+DAY TYPE: Medium to hard.
+
+Mixed - level 2 of 10. Z2 + 4x2 @ 105%.
+
+Structure: 10 min warm-up, 10 min @ 68%, 4 x (2 min @ 105% / 3 min @ 65%), 15 min @ 68%, 5 min cool-down.
+
+Coach notes: An endurance ride with four 2-minute touches just above threshold. Teaches you to surge and settle back into Zone 2 without blowing up.
+
+Estimated TSS: 51.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 2"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.68">
+            <textevent timeoffset="0" message="10 min steady Zone 2 at 68%. Relaxed, conversational pace."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="180" OnPower="1.05" OffPower="0.65">
+            <textevent timeoffset="0" message="2 min at 105% - just over threshold. Strong but controlled."/>
+            <textevent timeoffset="120" message="Back to Zone 2 - keep pedalling."/>
+        </IntervalsT>
+        <SteadyState Duration="900" Power="0.68">
+            <textevent timeoffset="0" message="15 min steady Zone 2 at 68%. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

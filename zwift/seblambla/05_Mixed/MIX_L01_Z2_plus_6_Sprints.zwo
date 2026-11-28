@@ -1,0 +1,38 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L01 - Z2 + 6 Sprints</name>
+    <description>PICK THIS WHEN: A fun, light day: endurance with a few short efforts. Fits anywhere in the week.
+DAY TYPE: Medium to hard.
+
+Mixed - level 1 of 10. Z2 + 6 Sprints.
+
+Structure: 10 min warm-up, 10 min @ 68%, 6 x (10 s @ 160% / 4:50 min @ 66%), 5 min @ 68%, 5 min cool-down.
+
+Coach notes: Zone 2 with six 10-second all-out sprints and full recovery. The 160% target is a floor - beat it.
+
+Estimated TSS: 45.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.68">
+            <textevent timeoffset="0" message="Recover: 10 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="6" OnDuration="10" OffDuration="290" OnPower="1.60" OffPower="0.66">
+            <textevent timeoffset="0" message="GO! 10 s at 160%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="10" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.68">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

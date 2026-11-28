@@ -1,0 +1,44 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot L02 - 2x12 @ 88%</name>
+    <description>PICK THIS WHEN: First weeks of a base phase, after a break, or as a lighter sweet spot week. Long blocks: closest to a steady climb or time-trial feel.
+DAY TYPE: Medium.
+
+Sweet Spot - level 2 of 10. 2x12 @ 88%.
+
+Structure: 10 min warm-up, 12 min @ 88%, 5 min @ 55%, 12 min @ 88%, 16 min @ 65%, 5 min cool-down.
+
+Coach notes: Slightly longer blocks at low sweet spot.
+
+Estimated TSS: 53.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 2"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="720" Power="0.88">
+            <textevent timeoffset="0" message="12 min at 88% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="360" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="660" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="720" Power="0.88">
+            <textevent timeoffset="0" message="12 min at 88% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="360" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="660" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="960" Power="0.65">
+            <textevent timeoffset="0" message="Main set done. 16 min of steady Zone 2 at 65% to finish - relaxed but not soft."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

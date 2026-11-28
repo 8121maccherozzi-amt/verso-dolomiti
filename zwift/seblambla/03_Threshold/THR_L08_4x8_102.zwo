@@ -1,0 +1,34 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L08 - 4x8 @ 102%</name>
+    <description>PICK THIS WHEN: Advanced threshold: for when L06 is completed with power holding steady. Expect to be tired tomorrow. Shorter intervals at higher power: pick when you want quality over duration.
+DAY TYPE: HARD.
+
+Threshold - level 8 of 10. 4x8 @ 102%.
+
+Structure: 10 min warm-up, 4 x (8 min @ 102% / 3:15 min @ 55%), 5 min cool-down.
+
+Coach notes: Four blocks just above FTP. The burn builds from minute 4 - stay seated.
+
+Estimated TSS: 71.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 8"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="480" OffDuration="195" OnPower="1.02" OffPower="0.55">
+            <textevent timeoffset="0" message="8 min at 102%. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+            <textevent timeoffset="480" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

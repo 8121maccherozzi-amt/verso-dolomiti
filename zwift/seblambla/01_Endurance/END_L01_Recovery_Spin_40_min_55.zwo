@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L01 - Recovery Spin 40 min @ 55%</name>
+    <description>PICK THIS WHEN: Recovery day: the day after a hard session, or when tired. Should feel almost too easy.
+DAY TYPE: Easy.
+
+Endurance - level 1 of 10. Recovery Spin 40 min @ 55%.
+
+Structure: 10 min warm-up, 40 min @ 55%, 10 min cool-down.
+
+Coach notes: Pure recovery. Finish fresher than you started; lower the bias if 55% feels like work.
+
+Estimated TSS: 28.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.40" PowerHigh="0.52">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="2400" Power="0.55">
+            <textevent timeoffset="0" message="40 min at 55% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="1200" message="Halfway. Check your position: relaxed shoulders, light grip."/>
+            <textevent timeoffset="2100" message="Last 5 minutes. Keep the pressure even."/>
+        </SteadyState>
+        <Cooldown Duration="600" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

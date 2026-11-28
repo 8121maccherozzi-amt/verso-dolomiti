@@ -1,0 +1,48 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L06 - Sweet Spot 2x10 + 4x2 @ 118%</name>
+    <description>PICK THIS WHEN: Medium-hard day. Combines sustained work with short high-power efforts.
+DAY TYPE: Medium to hard.
+
+Mixed - level 6 of 10. Sweet Spot 2x10 + 4x2 @ 118%.
+
+Structure: 10 min warm-up, 10 min @ 90%, 4 min @ 55%, 10 min @ 90%, 5 min @ 55%, 4 x (2 min @ 118% / 2 min @ 50%), 5 min cool-down.
+
+Coach notes: Aerobic base then top-end. Do not overcook the first VO2 interval.
+
+Estimated TSS: 62.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 6"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.90">
+            <textevent timeoffset="0" message="10 min at 90% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="600" Power="0.90">
+            <textevent timeoffset="0" message="10 min at 90% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="300" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="540" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="120" OffDuration="120" OnPower="1.18" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 2 min at 118%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="120" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

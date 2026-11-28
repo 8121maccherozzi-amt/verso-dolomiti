@@ -1,0 +1,41 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot 90 L02 - 4x9 @ 88%</name>
+    <description>PICK THIS WHEN: First weeks of a base phase, after a break, or as a lighter sweet spot week. Shorter blocks: easier to pace, good first choice at a new level.
+DAY TYPE: Medium to hard.
+
+Sweet Spot 90 - level 2 of 10. 4x9 @ 88%.
+
+Structure: 10 min warm-up, 5 min @ 65%, 4 x (9 min @ 88% / 3 min @ 55%), 22 min @ 65%, 5 min cool-down.
+
+Coach notes: 4 x 9 min at 88% - more total work than any 60-minute session at this intensity, with full recoveries.
+
+Estimated TSS: 80.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 2"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session, 90 minutes. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="5 min Zone 2 to settle in before the main set."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="540" OffDuration="180" OnPower="0.88" OffPower="0.55">
+            <textevent timeoffset="0" message="9 min at 88% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="270" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="480" message="Last minute - hold the number."/>
+            <textevent timeoffset="540" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="1320" Power="0.65">
+            <textevent timeoffset="0" message="22 min steady Zone 2 at 65% to round off the ride. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

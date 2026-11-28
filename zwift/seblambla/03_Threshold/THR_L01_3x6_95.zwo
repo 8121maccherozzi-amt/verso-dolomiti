@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L01 - 3x6 @ 95%</name>
+    <description>PICK THIS WHEN: Introduction to threshold work, or a lighter threshold week. Manageable even when not fully fresh.
+DAY TYPE: HARD.
+
+Threshold - level 1 of 10. 3x6 @ 95%.
+
+Structure: 10 min warm-up, 3 x (6 min @ 95% / 4 min @ 55%), 15 min @ 65%, 5 min cool-down.
+
+Coach notes: Gentle introduction to threshold. Short blocks just under FTP.
+
+Estimated TSS: 53.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="360" OffDuration="240" OnPower="0.95" OffPower="0.55">
+            <textevent timeoffset="0" message="6 min at 95%. Pace it like a time trial."/>
+            <textevent timeoffset="300" message="Last minute - hold the number."/>
+            <textevent timeoffset="360" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="900" Power="0.65">
+            <textevent timeoffset="0" message="Main set done. 15 min of steady Zone 2 at 65% to finish - relaxed but not soft."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

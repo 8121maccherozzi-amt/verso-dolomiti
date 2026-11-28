@@ -1,0 +1,48 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>FTP Test 20 min</name>
+    <description>PICK THIS WHEN: Every 6-8 weeks, or when sessions at your level feel too easy. Fresh legs, well fuelled.
+DAY TYPE: Special.
+
+Tests &amp; Openers. FTP Test 20 min.
+
+Structure: 10 min warm-up, 3 x (1 min @ 110% / 1 min @ 55%), 5 min @ 60%, 5 min free ride (all-out), 10 min @ 55%, 20 min free ride (all-out), 4 min cool-down.
+
+Coach notes: Classic 20-minute FTP test with a 5-minute all-out effort before it. FTP = 95% of the 20-min average. Update your FTP in the app afterwards; the whole library is scaled from it.
+
+Duration: 60 min. Estimated TSS: 69 (tests depend on your effort).</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Test"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="FTP test. Warm up properly - today decides the next weeks of training."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="60" OffDuration="60" OnPower="1.10" OffPower="0.55">
+            <textevent timeoffset="0" message="1 min at 110% - wake the legs up."/>
+            <textevent timeoffset="60" message="Easy minute."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.60">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <FreeRide Duration="300" FlatRoad="1">
+            <textevent timeoffset="0" message="5 min ALL-OUT. Start hard, hold on. This clears the anaerobic contribution before the 20-minute test."/>
+            <textevent timeoffset="240" message="Last minute - everything."/>
+        </FreeRide>
+        <SteadyState Duration="600" Power="0.55">
+            <textevent timeoffset="0" message="10 min easy. Recover fully, drink, and settle before the test."/>
+        </SteadyState>
+        <FreeRide Duration="1200" FlatRoad="1">
+            <textevent timeoffset="0" message="20-MINUTE TEST. Start at what you think you can hold for 20 min, not a sprint."/>
+            <textevent timeoffset="300" message="5 min in. If this already hurts a lot, back off 5 W."/>
+            <textevent timeoffset="600" message="Halfway. Hold steady or build slightly."/>
+            <textevent timeoffset="900" message="5 min to go. Start lifting."/>
+            <textevent timeoffset="1080" message="Last 2 minutes - empty it."/>
+        </FreeRide>
+        <Cooldown Duration="240" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Done. Your new FTP = 95% of the 20-min average power. Update it in Zwift."/>
+        </Cooldown>
+    </workout>
+</workout_file>

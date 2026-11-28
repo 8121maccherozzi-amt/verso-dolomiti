@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot L10 - 1x40 @ 92%</name>
+    <description>PICK THIS WHEN: Top of the sweet spot ladder: the most work that fits the format. After this, move to the 90-minute set or to threshold. Long blocks: closest to a steady climb or time-trial feel.
+DAY TYPE: Medium.
+
+Sweet Spot - level 10 of 10. 1x40 @ 92%.
+
+Structure: 10 min warm-up, 40 min @ 92%, 5 min @ 60%, 5 min cool-down.
+
+Coach notes: One continuous 40-minute block. Builds the durability of long climbs and time trials.
+
+Estimated TSS: 68.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 10"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="2400" Power="0.92">
+            <textevent timeoffset="0" message="40 min at 92% - sweet spot, comfortably hard."/>
+            <textevent timeoffset="1200" message="Halfway. Relax the hands and shoulders."/>
+            <textevent timeoffset="2340" message="Last minute - stay composed."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 5 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

@@ -1,0 +1,37 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L06 - 3x10 @ 98%</name>
+    <description>PICK THIS WHEN: Your hard session of the week in a build phase. Needs fresh legs and a proper meal beforehand.
+DAY TYPE: HARD.
+
+Threshold - level 6 of 10. 3x10 @ 98%.
+
+Structure: 10 min warm-up, 3 x (10 min @ 98% / 4 min @ 55%), 3 min @ 60%, 5 min cool-down.
+
+Coach notes: Three 10-minute blocks at 98%.
+
+Estimated TSS: 65.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 6"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="600" OffDuration="240" OnPower="0.98" OffPower="0.55">
+            <textevent timeoffset="0" message="10 min at 98%. Pace it like a time trial."/>
+            <textevent timeoffset="300" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="540" message="Last minute - hold the number."/>
+            <textevent timeoffset="600" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="180" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 3 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

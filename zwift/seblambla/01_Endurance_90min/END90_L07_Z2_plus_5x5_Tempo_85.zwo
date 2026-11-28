@@ -1,0 +1,36 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L07 - Z2 + 5x5 Tempo @ 85%</name>
+    <description>PICK THIS WHEN: Endurance day when fresh. Upper Zone 2 - still conversational but purposeful. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 7 of 10. Z2 + 5x5 Tempo @ 85%.
+
+Structure: 10 min warm-up, 5 min @ 66%, 5 x (5 min @ 85% / 9 min @ 65%), 5 min cool-down.
+
+Coach notes: Zone 2 base with five tempo touches spread across the ride. Same rhythm, just add pressure. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 72.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 7"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <SteadyState Duration="300" Power="0.66">
+            <textevent timeoffset="0" message="5 min at 66% - easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="5" OnDuration="300" OffDuration="540" OnPower="0.85" OffPower="0.65">
+            <textevent timeoffset="0" message="Tempo: 5 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="300" message="Back to Zone 2 at 65%. Let the heart rate drift down. Drink."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

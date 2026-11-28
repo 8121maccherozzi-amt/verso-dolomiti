@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L07 - 5x5 @ 105%</name>
+    <description>PICK THIS WHEN: Advanced threshold: for when L06 is completed with power holding steady. Expect to be tired tomorrow. Shorter intervals at higher power: pick when you want quality over duration.
+DAY TYPE: HARD.
+
+Threshold - level 7 of 10. 5x5 @ 105%.
+
+Structure: 10 min warm-up, 5 x (5 min @ 105% / 4 min @ 60%), 5 min cool-down.
+
+Coach notes: Five 5-minute blocks above threshold. Repeatability matters more than any single block.
+
+Estimated TSS: 67.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="5" OnDuration="300" OffDuration="240" OnPower="1.05" OffPower="0.60">
+            <textevent timeoffset="0" message="5 min at 105%. Pace it like a time trial."/>
+            <textevent timeoffset="240" message="Last minute - hold the number."/>
+            <textevent timeoffset="300" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

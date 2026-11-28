@@ -1,0 +1,34 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Sweet Spot L07 - 3x12 @ 92%</name>
+    <description>PICK THIS WHEN: When L06 feels comfortable. Solid aerobic work without the cost of threshold. Shorter blocks: easier to pace, good first choice at a new level.
+DAY TYPE: Medium.
+
+Sweet Spot - level 7 of 10. 3x12 @ 92%.
+
+Structure: 10 min warm-up, 3 x (12 min @ 92% / 3 min @ 55%), 5 min cool-down.
+
+Coach notes: Upper sweet spot. Focused but sustainable.
+
+Estimated TSS: 64.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Sweet Spot"/>
+        <tag name="Level 7"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Sweet spot session. Build the warm-up gradually."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="720" OffDuration="180" OnPower="0.92" OffPower="0.55">
+            <textevent timeoffset="0" message="12 min at 92% - comfortably hard."/>
+            <textevent timeoffset="360" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="660" message="Last minute - hold the number."/>
+            <textevent timeoffset="720" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

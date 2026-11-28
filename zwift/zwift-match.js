@@ -104,9 +104,11 @@ export function similarity(a, b, w = WEIGHTS) {
 }
 
 // library: [{ id, name, url?, metrics }] (precalcolata con build-library.mjs)
-export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTolerance = 0.35 } = {}) {
+export function bestMatches(sessionSegs, library, { top = 3, minScore = 0, durTolerance = 0.35, sources = null } = {}) {
+  // sources: es. ["zwift"] solo workout già presenti in Zwift; null = tutte ("seblambla" va importata)
   const m = metrics(sessionSegs);
   return library
+    .filter(x => !sources || sources.includes(x.source))
     .filter(x => relErr(x.metrics.dur, m.dur) <= durTolerance)   // pre-filtro durata
     .map(x => ({ ...x, ...similarity(m, x.metrics) }))
     .filter(x => x.score >= minScore)

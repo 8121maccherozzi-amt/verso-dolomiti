@@ -1,0 +1,39 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L05 - Z2 2x20 @ 70%</name>
+    <description>PICK THIS WHEN: Standard easy day. The bulk of your endurance riding should be here.
+DAY TYPE: Easy.
+
+Endurance - level 5 of 10. Z2 2x20 @ 70%.
+
+Structure: 10 min warm-up, 20 min @ 70%, 5 min @ 58%, 20 min @ 70%, 5 min cool-down.
+
+Coach notes: Two structured Zone 2 blocks. Hold the power line flat on the second one.
+
+Estimated TSS: 42.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 5"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="1200" Power="0.70">
+            <textevent timeoffset="0" message="20 min at 70% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="600" message="Halfway. Check your position: relaxed shoulders, light grip."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.58">
+            <textevent timeoffset="0" message="5 min at 58% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <SteadyState Duration="1200" Power="0.70">
+            <textevent timeoffset="0" message="20 min at 70% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="600" message="Halfway. Check your position: relaxed shoulders, light grip."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

@@ -1,0 +1,33 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L01 - Recovery Waves 50-58%</name>
+    <description>PICK THIS WHEN: Recovery day: the day after a hard session, or when tired. Should feel almost too easy. Variable pacing keeps a long ride interesting.
+DAY TYPE: Easy.
+
+Endurance - level 1 of 10. Recovery Waves 50-58%.
+
+Structure: 10 min warm-up, 4 x (5 min @ 58% / 5 min @ 50%), 10 min cool-down.
+
+Coach notes: Recovery ride with gentle waves to keep it interesting. Nothing above low Zone 2.
+
+Estimated TSS: 27.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.40" PowerHigh="0.52">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="300" OffDuration="300" OnPower="0.58" OffPower="0.50">
+            <textevent timeoffset="0" message="5 min at 58%."/>
+            <textevent timeoffset="240" message="Last minute - hold the number."/>
+            <textevent timeoffset="300" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="600" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

@@ -1,0 +1,53 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L10 - Tempo 3x15 @ 85%</name>
+    <description>PICK THIS WHEN: Tempo-flavoured endurance: counts as a MEDIUM day, not an easy one. Do not place it the day before a hard session. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 10 of 10. Tempo 3x15 @ 85%.
+
+Structure: 10 min warm-up, 10 min @ 65%, 15 min @ 85%, 5 min @ 65%, 15 min @ 85%, 5 min @ 65%, 15 min @ 85%, 10 min @ 62%, 5 min cool-down.
+
+Coach notes: Three 15-minute tempo blocks. The hardest endurance session in the library. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 82.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 10"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <SteadyState Duration="600" Power="0.65">
+            <textevent timeoffset="0" message="10 min at 65% - easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="900" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 15 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="450" message="Halfway through this tempo block. Relax the upper body."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="5 min at 65% - easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="900" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 15 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="450" message="Halfway through this tempo block. Relax the upper body."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="5 min at 65% - easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="900" Power="0.85">
+            <textevent timeoffset="0" message="Tempo: 15 min at 85%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="450" message="Halfway through this tempo block. Relax the upper body."/>
+        </SteadyState>
+        <SteadyState Duration="600" Power="0.62">
+            <textevent timeoffset="0" message="Main set done. 10 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

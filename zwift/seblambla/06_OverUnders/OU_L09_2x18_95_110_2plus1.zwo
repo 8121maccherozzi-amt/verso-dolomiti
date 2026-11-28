@@ -1,0 +1,42 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Over-Unders L09 - 2x18 (95/110) 2+1</name>
+    <description>PICK THIS WHEN: Peak over-unders. Race-specific lactate clearance; only when fresh, and never the day before VO2max. Long unders: closer to a hard climb with attacks.
+DAY TYPE: HARD.
+
+Over-Unders - level 9 of 10. 2x18 (95/110) 2+1.
+
+Structure: 10 min warm-up, 6 x (2 min @ 95% / 1 min @ 110%), 4 min @ 55%, 6 x (2 min @ 95% / 1 min @ 110%), 5 min @ 60%, 5 min cool-down.
+
+Coach notes: Two long blocks of six cycles, overs at 110%. Mentally commit before the second block. The over creates lactate, the under trains your body to clear it while still working - never coast after an over.
+
+Estimated TSS: 74.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Over-Under"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Over-under session. Warm up properly - the first block starts at the top of sweet spot."/>
+            <textevent timeoffset="480" message="2 minutes to the first block. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="6" OnDuration="120" OffDuration="60" OnPower="0.95" OffPower="1.10">
+            <textevent timeoffset="0" message="UNDER: 2 min at 95%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="120" message="OVER: 1 min at 110%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="6" OnDuration="120" OffDuration="60" OnPower="0.95" OffPower="1.10">
+            <textevent timeoffset="0" message="UNDER: 2 min at 95%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="120" message="OVER: 1 min at 110%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 5 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

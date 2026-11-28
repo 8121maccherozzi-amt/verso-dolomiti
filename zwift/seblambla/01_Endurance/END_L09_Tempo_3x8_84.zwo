@@ -1,0 +1,37 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance L09 - Tempo 3x8 @ 84%</name>
+    <description>PICK THIS WHEN: Tempo-flavoured endurance: counts as a MEDIUM day, not an easy one. Do not place it the day before a hard session.
+DAY TYPE: Easy.
+
+Endurance - level 9 of 10. Tempo 3x8 @ 84%.
+
+Structure: 10 min warm-up, 6 min @ 68%, 3 x (8 min @ 84% / 5 min @ 65%), 5 min cool-down.
+
+Coach notes: Three tempo blocks with Zone 2 recoveries. Rhythmic and controlled.
+
+Estimated TSS: 50.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 9"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Endurance ride. Warm up easy and settle into a relaxed rhythm."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="360" Power="0.68">
+            <textevent timeoffset="0" message="6 min at 68% - steady Zone 2. Conversational pace."/>
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="480" OffDuration="300" OnPower="0.84" OffPower="0.65">
+            <textevent timeoffset="0" message="Tempo: 8 min at 84%. Controlled, rhythmic."/>
+            <textevent timeoffset="240" message="Halfway. Breathe deep, relax the shoulders."/>
+            <textevent timeoffset="420" message="Last minute - hold the number."/>
+            <textevent timeoffset="480" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

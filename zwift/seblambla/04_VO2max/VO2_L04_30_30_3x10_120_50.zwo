@@ -1,0 +1,46 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>VO2max L04 - 30/30 3x10 (120/50)</name>
+    <description>PICK THIS WHEN: Standard VO2max day. Fresh legs only, never two days in a row. Micro-intervals: more time at high oxygen uptake with less perceived suffering; pick when motivation is low.
+DAY TYPE: HARD.
+
+VO2max - level 4 of 10. 30/30 3x10 (120/50).
+
+Structure: 12 min warm-up, 10 x (30 s @ 120% / 30 s @ 50%), 5 min @ 55%, 10 x (30 s @ 120% / 30 s @ 50%), 5 min @ 55%, 10 x (30 s @ 120% / 30 s @ 50%), 8 min cool-down.
+
+Coach notes: Three sets of ten 30/30s. The off is soft-pedalling, not stopping.
+
+Estimated TSS: 58.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="VO2max"/>
+        <tag name="Level 4"/>
+    </tags>
+    <workout>
+        <Warmup Duration="720" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="VO2max session. Warm up thoroughly and add two 15 s accelerations in the last 3 minutes."/>
+            <textevent timeoffset="600" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="10" OnDuration="30" OffDuration="30" OnPower="1.20" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 30 s at 120%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="30" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="10" OnDuration="30" OffDuration="30" OnPower="1.20" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 30 s at 120%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="30" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="10" OnDuration="30" OffDuration="30" OnPower="1.20" OffPower="0.50">
+            <textevent timeoffset="0" message="GO! 30 s at 120%. Commit from the first pedal stroke."/>
+            <textevent timeoffset="30" message="Recover - easy spin."/>
+        </IntervalsT>
+        <Cooldown Duration="480" PowerLow="0.55" PowerHigh="0.40">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

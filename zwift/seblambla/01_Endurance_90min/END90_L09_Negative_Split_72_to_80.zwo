@@ -1,0 +1,39 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Endurance 90 L09 - Negative Split 72 to 80%</name>
+    <description>PICK THIS WHEN: Tempo-flavoured endurance: counts as a MEDIUM day, not an easy one. Do not place it the day before a hard session. The 90-minute set is for the long ride of the week; ride one level below your 60-minute endurance level if in doubt. Variable pacing keeps a long ride interesting.
+DAY TYPE: Easy to medium.
+
+Endurance 90 - level 9 of 10. Negative Split 72 to 80%.
+
+Structure: 10 min warm-up, 35 min @ 72%, 40 min @ 80%, 5 min cool-down.
+
+Coach notes: 35 min Zone 2 then 40 min low tempo. The second part should feel like a deliberate step up. Eat 40-60 g of carbohydrate per hour on rides this long.
+
+Estimated TSS: 80.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Endurance"/>
+        <tag name="Level 9"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.60">
+            <textevent timeoffset="0" message="Long endurance ride: 90 minutes. Warm up easy and settle into a relaxed rhythm. Have food and drink within reach."/>
+            <textevent timeoffset="480" message="2 minutes to the main set."/>
+        </Warmup>
+        <SteadyState Duration="2100" Power="0.72">
+            <textevent timeoffset="0" message="35 min at 72% - steady Zone 2. Conversational pace."/>
+            <textevent timeoffset="900" message="15 min into this block. Drink, and eat something every 30-40 minutes."/>
+            <textevent timeoffset="1800" message="Last 5 minutes of this block. Keep the pressure even."/>
+        </SteadyState>
+        <SteadyState Duration="2400" Power="0.80">
+            <textevent timeoffset="0" message="Tempo: 40 min at 80%. Controlled, rhythmic, not hard."/>
+            <textevent timeoffset="1200" message="Halfway through this tempo block. Relax the upper body."/>
+            <textevent timeoffset="2100" message="Last 5 minutes of tempo."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.58" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done - 90 minutes in the bank. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

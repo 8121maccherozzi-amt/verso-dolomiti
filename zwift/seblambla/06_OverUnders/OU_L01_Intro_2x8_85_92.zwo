@@ -1,0 +1,42 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Over-Unders L01 - Intro 2x8 (85/92)</name>
+    <description>PICK THIS WHEN: Introduction to over-unders: small over/under gap. Start here even if your threshold level is higher.
+DAY TYPE: HARD.
+
+Over-Unders - level 1 of 10. Intro 2x8 (85/92).
+
+Structure: 10 min warm-up, 4 x (1 min @ 85% / 1 min @ 92%), 5 min @ 55%, 4 x (1 min @ 85% / 1 min @ 92%), 24 min @ 65%, 5 min cool-down.
+
+Coach notes: Learn the rhythm: 1 min at 85%, 1 min at 92%. Nothing above sweet spot yet. The over creates lactate, the under trains your body to clear it while still working - never coast after an over.
+
+Estimated TSS: 49.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Over-Under"/>
+        <tag name="Level 1"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Over-under session. Warm up properly - the first block starts at the top of sweet spot."/>
+            <textevent timeoffset="480" message="2 minutes to the first block. Lift the effort slightly."/>
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="60" OffDuration="60" OnPower="0.85" OffPower="0.92">
+            <textevent timeoffset="0" message="UNDER: 1 min at 85%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="60" message="OVER: 1 min at 92%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="60" OffDuration="60" OnPower="0.85" OffPower="0.92">
+            <textevent timeoffset="0" message="UNDER: 1 min at 85%. Hold it - this is still work, no coasting."/>
+            <textevent timeoffset="60" message="OVER: 1 min at 92%. Push, then settle straight back to the under."/>
+        </IntervalsT>
+        <SteadyState Duration="1440" Power="0.65">
+            <textevent timeoffset="0" message="Main set done. 24 min of steady Zone 2 at 65% to finish - relaxed but not soft."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

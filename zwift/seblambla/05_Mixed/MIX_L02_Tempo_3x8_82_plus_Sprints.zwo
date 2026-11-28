@@ -1,0 +1,55 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Mixed L02 - Tempo 3x8 @ 82% + Sprints</name>
+    <description>PICK THIS WHEN: An easy-to-medium day with some intensity touches. Good when you want variety without fatigue.
+DAY TYPE: Medium to hard.
+
+Mixed - level 2 of 10. Tempo 3x8 @ 82% + Sprints.
+
+Structure: 10 min warm-up, 7:50 min @ 82%, 10 s @ 160%, 4 min @ 55%, 7:50 min @ 82%, 10 s @ 160%, 4 min @ 55%, 7:50 min @ 82%, 10 s @ 160%, 13 min @ 60%, 5 min cool-down.
+
+Coach notes: Each tempo block ends with a 10-second sprint on tired legs - like a race finish.
+
+Estimated TSS: 49.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Mixed"/>
+        <tag name="Level 2"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.75">
+            <textevent timeoffset="0" message="Mixed session today. Warm up progressively."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="470" Power="0.82">
+            <textevent timeoffset="0" message="Tempo: 7:50 at 82%. Controlled, rhythmic, not hard."/>
+        </SteadyState>
+        <SteadyState Duration="10" Power="1.60">
+            <textevent timeoffset="0" message="ATTACK! 10 s at 160%!"/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="470" Power="0.82">
+            <textevent timeoffset="0" message="Tempo: 7:50 at 82%. Controlled, rhythmic, not hard."/>
+        </SteadyState>
+        <SteadyState Duration="10" Power="1.60">
+            <textevent timeoffset="0" message="ATTACK! 10 s at 160%!"/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 4 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="470" Power="0.82">
+            <textevent timeoffset="0" message="Tempo: 7:50 at 82%. Controlled, rhythmic, not hard."/>
+        </SteadyState>
+        <SteadyState Duration="10" Power="1.60">
+            <textevent timeoffset="0" message="ATTACK! 10 s at 160%!"/>
+        </SteadyState>
+        <SteadyState Duration="780" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 13 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

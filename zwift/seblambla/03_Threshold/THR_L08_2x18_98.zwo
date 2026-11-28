@@ -1,0 +1,44 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold L08 - 2x18 @ 98%</name>
+    <description>PICK THIS WHEN: Advanced threshold: for when L06 is completed with power holding steady. Expect to be tired tomorrow. Long blocks: time-trial pacing practice.
+DAY TYPE: HARD.
+
+Threshold - level 8 of 10. 2x18 @ 98%.
+
+Structure: 10 min warm-up, 18 min @ 98%, 5 min @ 55%, 18 min @ 98%, 4 min @ 60%, 5 min cool-down.
+
+Coach notes: Two long blocks just under FTP. Mentally commit before the second one.
+
+Estimated TSS: 72.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 8"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="1080" Power="0.98">
+            <textevent timeoffset="0" message="18 min at 98% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="540" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="1020" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.55">
+            <textevent timeoffset="0" message="Recover: 5 min easy. Drink."/>
+        </SteadyState>
+        <SteadyState Duration="1080" Power="0.98">
+            <textevent timeoffset="0" message="18 min at 98% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="540" message="Halfway. Stay smooth."/>
+            <textevent timeoffset="1020" message="Last minute - hold the number."/>
+        </SteadyState>
+        <SteadyState Duration="240" Power="0.60">
+            <textevent timeoffset="0" message="Main set done. 4 min of easy Zone 2 to finish."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>

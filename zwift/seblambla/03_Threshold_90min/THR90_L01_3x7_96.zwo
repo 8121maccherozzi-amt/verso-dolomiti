@@ -1,0 +1,40 @@
+<workout_file>
+    <author>Coach Library</author>
+    <name>Threshold 90 L01 - 3x7 @ 96%</name>
+    <description>PICK THIS WHEN: Introduction to threshold work, or a lighter threshold week. Manageable even when not fully fresh.
+DAY TYPE: HARD.
+
+Threshold 90 - level 1 of 10. 3x7 @ 96%.
+
+Structure: 10 min warm-up, 5 min @ 65%, 3 x (7 min @ 96% / 4 min @ 55%), 37 min @ 65%, 5 min cool-down.
+
+Coach notes: 3 x 7 min at 96% - more total work than any 60-minute session at this intensity, with full recoveries.
+
+Estimated TSS: 77.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Threshold"/>
+        <tag name="Level 1"/>
+        <tag name="90 min"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.45" PowerHigh="0.80">
+            <textevent timeoffset="0" message="Threshold session, 90 minutes. Warm up properly - the main set starts hard."/>
+            <textevent timeoffset="480" message="2 minutes to the main set. Lift the effort slightly."/>
+        </Warmup>
+        <SteadyState Duration="300" Power="0.65">
+            <textevent timeoffset="0" message="5 min Zone 2 to settle in before the main set."/>
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="420" OffDuration="240" OnPower="0.96" OffPower="0.55">
+            <textevent timeoffset="0" message="7 min at 96% - threshold. Pace it like a time trial."/>
+            <textevent timeoffset="360" message="Last minute - hold the number."/>
+            <textevent timeoffset="420" message="Recover - easy spin."/>
+        </IntervalsT>
+        <SteadyState Duration="2220" Power="0.65">
+            <textevent timeoffset="0" message="37 min steady Zone 2 at 65% to round off the ride. Relaxed, conversational pace."/>
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60" PowerHigh="0.45">
+            <textevent timeoffset="0" message="Well done. Cool down easy."/>
+        </Cooldown>
+    </workout>
+</workout_file>
